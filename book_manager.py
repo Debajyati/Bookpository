@@ -2,16 +2,9 @@ import os
 
 def list_all_files(directory):
     exclude_dirs = [os.path.join(directory, '.git')]
-    exclude_files = [
-        os.path.join(directory, 'new.py'),
-        os.path.join(directory, 'README.md'),
-        os.path.join(directory, 'book_manager.py'),
-        os.path.join(directory, 'new2.py'),
-        os.path.join(directory, 'new3.py')
-    ]
+    exclude_files = [os.path.join(directory, 'README.md'), os.path.join(directory, 'book_manager.py')]
 
     toc_lines = []
-
     for root, dirs, files in os.walk(directory):
         # Exclude specific directories by modifying dirs in-place
         dirs[:] = [d for d in dirs if os.path.join(root, d) not in exclude_dirs]
@@ -19,11 +12,6 @@ def list_all_files(directory):
         for file in files:
             file_path = os.path.join(root, file)
             if file_path not in exclude_files:
-                relative_path = os.path.relpath(file_path, directory)
-                # Determine depth of current file relative to the starting directory
-                depth = relative_path.count(os.sep)
-                # Create indentation based on depth
-                indent = '    ' * depth
                 # Create table of contents line with proper indentation
                 toc_line = f"1. ***{(root[2:]).upper()}*** --> [{file.capitalize()}]({file_path})"
                 toc_lines.append(toc_line)
