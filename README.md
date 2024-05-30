@@ -14,6 +14,7 @@
 1. ***LANGUAGES/PYTHON*** --> [Pysheeet.pdf](./languages/python/pysheeet.pdf)
 1. ***LANGUAGES/PYTHON*** --> [The_python_standard_library_by_example.pdf](./languages/python/The_Python_Standard_Library_by_Example.pdf)
 1. ***LANGUAGES/PYTHON*** --> [Thinkpython2.pdf](./languages/python/thinkpython2.pdf)
+1. ***LANGUAGES/RUST*** --> [Hands-on concurrency with rust (2018).pdf](./languages/Rust/Hands-On Concurrency with Rust (2018).pdf)
 1. ***OTHERS*** --> [Computer_organization_and_design_risc-v_edition.pdf](./others/Computer_Organization_and_Design_RISC-V_edition.pdf)
 1. ***OTHERS*** --> [Digital_logic_and_computer_design_by_m_morris_mano_2nd_edition.pdf](./others/Digital_Logic_And_Computer_Design_By_M_Morris_Mano_2nd_Edition.pdf)
 1. ***OTHERS*** --> [Linux_pocket_guide,_3rd_edition.pdf](./others/Linux_Pocket_Guide,_3rd_Edition.pdf)
